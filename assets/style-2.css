@@ -11,7 +11,6 @@ a:hover {
     /* color: #444; */
 }
 
-
 .noter {
     font-size: 9pt;
 }
@@ -38,8 +37,48 @@ a:hover {
 }
 
 .menulink:hover {
-    color: blue
+    color: orange
 }
+
+
+.cv-link {
+    color: red;
+  }
+  
+  .google-scholar-link {
+    color: blue;
+  }
+  
+  .email-link {
+    color: green;
+  }
+  
+  .github-link {
+    color: orchid;
+  }
+  
+  .linkedin-link {
+    color: purple;
+  }
+  
+  .twitter-link {
+    color: teal;
+  }
+
+  .paper-link {
+    color: maroon
+  }
+
+  .grey-bar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 1px;
+  }
+
 
 .profilepic {
     width: 200px;
@@ -81,5 +120,5 @@ a:hover {
 
 .thisauthor {
           color: #111;
-          text-decoration: underline;
+          text-decoration: underline !important;
     }

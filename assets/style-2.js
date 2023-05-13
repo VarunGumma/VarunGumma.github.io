@@ -1,10 +1,10 @@
 // Initialize font properties
-const fontname = "Monospace";
+const fontname = "Garamond";
 const fontweights = [300, 400]
 
 // Color properties
 const basecolor = "#777";
-const accentcolor = "#a00";
+const accentcolor = "#00a";
 const highlightcolor = "#111";
 
 // const basecolor = "#888";
@@ -17,7 +17,7 @@ const bodyfontsize = "12pt";
 const backgroundcolor = "#fff";
 
 // Link properties
-const acolor = accentcolor;
+// const acolor = accentcolor;
 const adecoration = "none";
 // const ahovercolor = accentcolor;
 // const ahoverduration = "0.3s";
@@ -84,20 +84,20 @@ $("body").css("font-weight", bodyfontweight);
 $("body").css("font-size", bodyfontsize);
 $("body").css("background-color", backgroundcolor);
 
-$("a").css("color", acolor);
+// $("a").css("color", acolor);
 $("a").css("text-decoration", adecoration);
 
-$(".menulink").css("color", menucolor);
+$(".menulink").css("color", menucolor + " !important");
 $(".menulink").css("font-size", menufontsize);
 $(".menulink").css("text-decoration", menudecoration);
 
-$(".header").css("color", headercolor);
+$(".header").css("color", headercolor + " !important");
 $(".header").css("font-size", headerfontsize);
 $(".header").css("text-decoration", headerdecoration);
 $(".name").css("color", namecolor);
 $(".name").css("font-size", namefontsize);
 
-$(".papertitle").css("color", ptitlecolor);
+$(".papertitle").css("color", ptitlecolor + " !important");
 $(".papertitle").css("font-size", ptitlefontsize);
 $(".papertitle").css("font-weight", ptitleweight);
 $(".papertitle").css("text-decoration", ptitledecoration);

@@ -19,24 +19,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
       
     <title>Varun Gumma</title>
+
+    <style>
+      .about {
+          text-align: justify;
+      }
+  </style>
+</head>
   </head>
   <body>
     <!-- <h1>Hello, world!</h1> -->
-
     <div class="container pt-5 allstuffp">
         <div class="row pt-5 allstuff">
             <div class="col-md-4 pt-5">
                 <div class="fixed-posi">
                 <p class="name"><strong>Varun</strong> Gumma</p>
                 <img src="images/profile_pic.jpg" class="profilepic pt-3 pb-2">
-                <div class="pt-5 menur"><a class="menulink" target="_blank" href="assets/CV.pdf"><i class="fas fa-file-pdf"></i> Curriculum Vitae</a></div>
+                <!-- <div class="pt-5 menur"><a class="menulink" target="_blank" href="assets/CV.pdf"><i class="fas fa-file-pdf"></i> Curriculum Vitae</a></div>
                 <div class=""><a class="menulink" target="_blank" href="https://scholar.google.com/citations?user=tqDhGbwAAAAJ&hl=en"><i class="fab fa-google"></i> Google Scholar</a></div>
                 <div class=""><a class="menulink" target="_blank" href="mailto:varun230999@gmail.com"><i class="fas fa-envelope"></i> Email Address</a></div>
                 <div class=""><a class="menulink" target="_blank" href="https://github.com/VarunGumma"><i class="fab fa-github"></i> GitHub Profile </a></div>
                 <div class=""><a class="menulink" target="_blank" href="https://www.linkedin.com/in/varun-gumma-821b451a6/"><i class="fab fa-linkedin"></i> Linkedin</a></div>
-                <div class=""><a class="menulink" target="_blank" href="https://twitter.com/VarunGumma23"><i class="fab fa-twitter"></i> Twitter</a></div>
+                <div class=""><a class="menulink" target="_blank" href="https://twitter.com/VarunGumma23"><i class="fab fa-twitter"></i> Twitter</a></div> -->
+                <div class="pt-5 menur">
+                  <a class="menulink cv-link" target="_blank" href="assets/CV.pdf"><i class="fas fa-file-pdf"></i> Curriculum Vitae</a>
                 </div>
-            </div>
+                <div class="">
+                  <a class="menulink google-scholar-link" target="_blank" href="https://scholar.google.com/citations?user=tqDhGbwAAAAJ&hl=en"><i class="fab fa-google"></i> Google Scholar</a>
+                </div>
+                <div class="">
+                  <a class="menulink email-link" target="_blank" href="mailto:varun230999@gmail.com"><i class="fas fa-envelope"></i> Email Address</a>
+                </div>
+                <div class="">
+                  <a class="menulink github-link" target="_blank" href="https://github.com/VarunGumma"><i class="fab fa-github"></i> GitHub Profile </a>
+                </div>
+                <div class="">
+                  <a class="menulink linkedin-link" target="_blank" href="https://www.linkedin.com/in/varun-gumma-821b451a6/"><i class="fab fa-linkedin"></i> Linkedin</a>
+                </div>
+                <div class="">
+                  <a class="menulink twitter-link" target="_blank" href="https://twitter.com/VarunGumma23"><i class="fab fa-twitter"></i> Twitter</a>
+                </div>
+                </div>
+              </div>
+
             <div class="col-md-8 pt-5 about">
                  Hi, I am a Graduate Research Assistant at <a class="in-text"
                      href="https://www.iitm.ac.in/"
@@ -97,9 +122,9 @@
                   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
                   
                   <!-- Add a down arrow beside the heading -->
-                  <p class="header pt-5">
+                  <p class="header pt-5"">
                     Publications
-                    <span class="arrow">&#9660;</span>
+                    <span id="arrow" class="arrow">&#9660;</span>
                   </p>
                   
                   <!-- Wrap the publications in a dropdown container -->
@@ -107,7 +132,7 @@
                     <div class="dropdown-content">
                       <div class="py-2">
                         <p class="paper my-2 pl-2">
-                          <span class="papertitle">PAMMELA: Policy Administration Methodology using Machine Learning</span><br>
+                          <span class="papertitle paper-link">PAMMELA: Policy Administration Methodology using Machine Learning</span><br>
                           <span class="thisauthor">Varun Gumma</span>, Barsha Mitra, Soumyadeep Dey, Pratik Shashikantbhai Patel*, Sourabh Suman*, Saptarshi Das and Jaideep Vaidya
                           <span class="noter"> (* = Equal Contribution)</span><br>
                           <span class="conf">
@@ -120,7 +145,7 @@
                       </div>
                       <div class="py-2">
                         <p class="paper my-2 pl-2">
-                          <span class="papertitle">An Empirical Study of Leveraging Knowledge Distillation for Compressing Multilingual Neural Machine Translation Models</span><br>
+                          <span class="papertitle paper-link">An Empirical Study of Leveraging Knowledge Distillation for Compressing Multilingual Neural Machine Translation Models</span><br>
                           <span class="thisauthor">Varun Gumma</span>, Raj Dabre and Pratyush Kumar
                           <span class="noter"></span><br>
                           <span class="conf">
@@ -170,9 +195,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="assets/style-2.js"></script>
 </body>
-  <style>
-    .grey-bar {
-      background-color: #dcdcdc;
-    }
-  </style>
+
 </html>
