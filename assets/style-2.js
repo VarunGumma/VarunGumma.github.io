@@ -1,5 +1,5 @@
 // Initialize font properties
-const fontname = "Helvetica Neue";
+const fontname = "Nato";
 const fontweights = [300, 400]
 
 // Color properties
