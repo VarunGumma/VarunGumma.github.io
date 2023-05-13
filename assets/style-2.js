@@ -1,5 +1,5 @@
 // Initialize font properties
-const fontname = "Nato";
+const fontname = "Ubuntu";
 const fontweights = [300, 400]
 
 // Color properties
