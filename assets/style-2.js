@@ -1,5 +1,5 @@
 // Initialize font properties
-const fontname = "Garamond";
+const fontname = "Ubuntu";
 const fontweights = [300, 400]
 
 // Color properties
@@ -113,8 +113,10 @@ $(".institution").css("font-size", insttitlesize);
 $(".years").css("color", instyearcolor);
 $(".years").css("font-size", instyearsize);
 
+
 $(document).ready(function() {
-    $('.header').click(function() {
-      $('.dropdown-container').toggleClass('active');
-    });
+  $('.header').click(function() {
+    var dropdownContainer = $(this).next('.dropdown-container');
+    dropdownContainer.toggleClass('active');
   });
+});

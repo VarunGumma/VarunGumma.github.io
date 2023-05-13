@@ -21,6 +21,19 @@
     <title>Varun Gumma</title>
 
     <style>
+      .orange-box {
+          background-color: orange;
+          display: inline-block;
+          padding: 2.5px 5px;
+          border-radius: 5px;
+      }
+  
+      .white-text {
+          color: white;
+      }
+    </style>
+
+    <style>
       .about {
           text-align: justify;
       }
@@ -35,12 +48,6 @@
                 <div class="fixed-posi">
                 <p class="name"><strong>Varun</strong> Gumma</p>
                 <img src="images/profile_pic.jpg" class="profilepic pt-3 pb-2">
-                <!-- <div class="pt-5 menur"><a class="menulink" target="_blank" href="assets/CV.pdf"><i class="fas fa-file-pdf"></i> Curriculum Vitae</a></div>
-                <div class=""><a class="menulink" target="_blank" href="https://scholar.google.com/citations?user=tqDhGbwAAAAJ&hl=en"><i class="fab fa-google"></i> Google Scholar</a></div>
-                <div class=""><a class="menulink" target="_blank" href="mailto:varun230999@gmail.com"><i class="fas fa-envelope"></i> Email Address</a></div>
-                <div class=""><a class="menulink" target="_blank" href="https://github.com/VarunGumma"><i class="fab fa-github"></i> GitHub Profile </a></div>
-                <div class=""><a class="menulink" target="_blank" href="https://www.linkedin.com/in/varun-gumma-821b451a6/"><i class="fab fa-linkedin"></i> Linkedin</a></div>
-                <div class=""><a class="menulink" target="_blank" href="https://twitter.com/VarunGumma23"><i class="fab fa-twitter"></i> Twitter</a></div> -->
                 <div class="pt-5 menur">
                   <a class="menulink cv-link" target="_blank" href="assets/CV.pdf"><i class="fas fa-file-pdf"></i> Curriculum Vitae</a>
                 </div>
@@ -124,11 +131,11 @@
                   <!-- Add a down arrow beside the heading -->
                   <p class="header pt-5"">
                     Publications
-                    <span id="arrow" class="arrow">&#9660;</span>
+                    <span id="publication-arrow" class="arrow" style="font-size: smaller;">&#9654;</span>
                   </p>
                   
                   <!-- Wrap the publications in a dropdown container -->
-                  <div class="dropdown-container">
+                  <div id="publications-dropdown" class="dropdown-container">
                     <div class="dropdown-content">
                       <div class="py-2">
                         <p class="paper my-2 pl-2">
@@ -138,7 +145,7 @@
                           <span class="conf">
                             <a class="confshort" href="http://www.wikicfp.com/cfp/servlet/event.showcfp?copyownerid=90704&eventid=150385">SECRYPT '22</a> | 19th International Conference on Security and Cryptography
                           </span><br>
-                          <a class="tag" href="https://www.scitepress.org/Link.aspx?doi=10.5220/0011272400003283" target="_blank">pdf</a><span class="tagsep">|</span>
+                          <a class="tag" href="https://www.scitepress.org/Link.aspx?doi=10.5220/0011272400003283" target="_blank">PDF</a><span class="tagsep">|</span>
                           <a class="tag" href="abstracts/secrypt2022.txt" target="_blank">abstract</a><span class="tagsep">|</span>
                           <a class="tag" href="cites/secrypt2022.bib" target="_blank">cite</a><span class="tagsep"></span>
                         </p>
@@ -151,14 +158,32 @@
                           <span class="conf">
                             <a class="confshort" href="https://events.tuni.fi/eamt23/">EAMT '23</a> | 24th Annual Conference of The European Association for Machine Translation
                           </span><br>
-                          <a class="tag" href="https://arxiv.org/abs/2304.09388.pdf" target="_blank">pdf</a><span class="tagsep">|</span>
+                          <a class="tag" href="https://arxiv.org/abs/2304.09388.pdf" target="_blank">PDF</a><span class="tagsep">|</span>
                           <a class="tag" href="abstracts/eamt2023.txt" target="_blank">abstract</a><span class="tagsep">|</span>
                           <a class="tag" href="cites/eamt2023.bib" target="_blank">cite</a>
                         </p>
                       </div>
                     </div>
                   </div>
+
+
+                  <p class="header pt-5">
+                    News
+                    <span id="news-arrow" class="arrow" style="font-size: smaller;">&#9654;</span>
+                  </p>
                   
+                  <!-- Wrap the news in a dropdown container -->
+                  <div id="news-dropdown" class="dropdown-container">
+                    <div class="dropdown-content">
+                      <div class="py-2">
+                        <p class="news my-2 pl-2">
+                          <span class="orange-box">
+                            <span class="white-text">Apr, 2023</span>
+                          </span> -- <span class="description">Accepted an offer to join Microsoft Research India (MSRI) as an Intern</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                   
                 <div class="row text-center py-4">
                     <div class="mx-auto mt-2">

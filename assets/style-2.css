@@ -41,7 +41,16 @@ a:hover {
 }
 
 
-.cv-link {
+  .arrow {
+    transition: transform 0.3s;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+
+  .cv-link {
     color: red;
   }
   
@@ -70,13 +79,14 @@ a:hover {
   }
 
   .grey-bar {
-    position: fixed;
+    position: float;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: black;
     color: white;
     padding: 1px;
+    z-index: 999;
   }
 
 
