@@ -16,23 +16,25 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
       
     <title>Varun Gumma</title>
   </head>
   <body>
     <!-- <h1>Hello, world!</h1> -->
+
     <div class="container pt-5 allstuffp">
         <div class="row pt-5 allstuff">
             <div class="col-md-4 pt-5">
                 <div class="fixed-posi">
                 <p class="name"><strong>Varun</strong> Gumma</p>
                 <img src="images/profile_pic.jpg" class="profilepic pt-3 pb-2">
-                <div class="pt-5 menur"><a class="menulink" target="_blank" href="assets/CV.pdf">Curriculum Vitae</a></div>
-                <div class=""><a class="menulink" target="_blank" href="https://scholar.google.com/citations?user=tqDhGbwAAAAJ&hl=en">Google Scholar</a></div>
-                <div class=""><a class="menulink" target="_blank" href="mailto:varun230999@gmail.com">Email Address</a></div>
-                <div class=""><a class="menulink" target="_blank" href="https://github.com/VarunGumma">GitHub Profile</a></div>
-                <div class=""><a class="menulink" target="_blank" href="https://www.linkedin.com/in/varun-gumma-821b451a6/">Linkedin</a></div>
-                <div class=""><a class="menulink" target="_blank" href="https://twitter.com/VarunGumma23">Twitter</a></div>
+                <div class="pt-5 menur"><a class="menulink" target="_blank" href="assets/CV.pdf"><i class="fas fa-file-pdf"></i> Curriculum Vitae</a></div>
+                <div class=""><a class="menulink" target="_blank" href="https://scholar.google.com/citations?user=tqDhGbwAAAAJ&hl=en"><i class="fab fa-google"></i> Google Scholar</a></div>
+                <div class=""><a class="menulink" target="_blank" href="mailto:varun230999@gmail.com"><i class="fas fa-envelope"></i> Email Address</a></div>
+                <div class=""><a class="menulink" target="_blank" href="https://github.com/VarunGumma"><i class="fab fa-github"></i> GitHub Profile </a></div>
+                <div class=""><a class="menulink" target="_blank" href="https://www.linkedin.com/in/varun-gumma-821b451a6/"><i class="fab fa-linkedin"></i> Linkedin</a></div>
+                <div class=""><a class="menulink" target="_blank" href="https://twitter.com/VarunGumma23"><i class="fab fa-twitter"></i> Twitter</a></div>
                 </div>
             </div>
             <div class="col-md-8 pt-5 about">
@@ -74,35 +76,65 @@
                  details, check my <a class="in-text" href="assets/CV.pdf" target="_blank">CV</a> or hit me up
                  on my <a class="in-text" href="mailto:varun230999@gmail.com">email</a>.
 
-                 <p class="header pt-5">Publications</p>
-                 <div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle">PAMMELA: Policy Administration Methodology using Machine Learning</span><br>
-                     <span class="thisauthor">Varun Gumma</span>, Barsha Mitra, Soumyadeep Dey, Pratik Shashikantbhai Patel*, Sourabh Suman*, Saptarshi Das and Jaideep Vaidya
-                     <span class="noter"> (* = Equal Contribution)</span><br>
-                     <span class="conf"><a class="confshort" href="http://www.wikicfp.com/cfp/servlet/event.showcfp?copyownerid=90704&eventid=150385">SECRYPT '22</a> | 
-                        19th International Conference on Security and Cryptography </span><br>
-                    
-                     <a class="tag" href="https://www.scitepress.org/Link.aspx?doi=10.5220/0011272400003283" target="_blank">pdf</a><span class="tagsep">|</span>
-                     <a class="tag" href="abstracts/secrypt2022.txt" target="_blank">abstract</a><span class="tagsep">|</span>
-                     <a class="tag" href="cites/secrypt2022.bib" target="_blank">cite</a><span class="tagsep"></span>
-                 </p>
-                 </div>
-                 <div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle">An Empirical Study of Leveraging Knowledge Distillation for Compressing Multilingual Neural Machine Translation Models</span><br>
-                     <span class="thisauthor">Varun Gumma</span>, Raj Dabre and Pratyush Kumar
-                     <span class="noter"></span><br>
-                     <span class="conf"><a class="confshort" href="https://events.tuni.fi/eamt23/">EAMT '23</a> | 
-                        24th Annual Conference of The European Association for Machine Translation</span><br>
-                    
-                     <a class="tag" href="https://arxiv.org/abs/2304.09388.pdf" target="_blank">pdf</a><span class="tagsep">|</span>
-                     <a class="tag" href="abstracts/eamt2023.txt" target="_blank">abstract</a><span class="tagsep">|</span>
-                     <a class="tag" href="cites/eamt2023.bib" target="_blank">cite</a>
-                 </p>
-                 </div>
-                 
-
+                 <style>
+                    /* Style the down arrow */
+                    .header .arrow {
+                      margin-left: 3px;
+                      cursor: pointer;
+                    }
+                  
+                    /* Hide the dropdown content by default */
+                    .dropdown-content {
+                      display: none;
+                    }
+                  
+                    /* Show the dropdown content when arrow is clicked */
+                    .dropdown-container.active .dropdown-content {
+                      display: block;
+                    }
+                  </style>
+                  
+                  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                  
+                  <!-- Add a down arrow beside the heading -->
+                  <p class="header pt-5">
+                    Publications
+                    <span class="arrow">&#9660;</span>
+                  </p>
+                  
+                  <!-- Wrap the publications in a dropdown container -->
+                  <div class="dropdown-container">
+                    <div class="dropdown-content">
+                      <div class="py-2">
+                        <p class="paper my-2 pl-2">
+                          <span class="papertitle">PAMMELA: Policy Administration Methodology using Machine Learning</span><br>
+                          <span class="thisauthor">Varun Gumma</span>, Barsha Mitra, Soumyadeep Dey, Pratik Shashikantbhai Patel*, Sourabh Suman*, Saptarshi Das and Jaideep Vaidya
+                          <span class="noter"> (* = Equal Contribution)</span><br>
+                          <span class="conf">
+                            <a class="confshort" href="http://www.wikicfp.com/cfp/servlet/event.showcfp?copyownerid=90704&eventid=150385">SECRYPT '22</a> | 19th International Conference on Security and Cryptography
+                          </span><br>
+                          <a class="tag" href="https://www.scitepress.org/Link.aspx?doi=10.5220/0011272400003283" target="_blank">pdf</a><span class="tagsep">|</span>
+                          <a class="tag" href="abstracts/secrypt2022.txt" target="_blank">abstract</a><span class="tagsep">|</span>
+                          <a class="tag" href="cites/secrypt2022.bib" target="_blank">cite</a><span class="tagsep"></span>
+                        </p>
+                      </div>
+                      <div class="py-2">
+                        <p class="paper my-2 pl-2">
+                          <span class="papertitle">An Empirical Study of Leveraging Knowledge Distillation for Compressing Multilingual Neural Machine Translation Models</span><br>
+                          <span class="thisauthor">Varun Gumma</span>, Raj Dabre and Pratyush Kumar
+                          <span class="noter"></span><br>
+                          <span class="conf">
+                            <a class="confshort" href="https://events.tuni.fi/eamt23/">EAMT '23</a> | 24th Annual Conference of The European Association for Machine Translation
+                          </span><br>
+                          <a class="tag" href="https://arxiv.org/abs/2304.09388.pdf" target="_blank">pdf</a><span class="tagsep">|</span>
+                          <a class="tag" href="abstracts/eamt2023.txt" target="_blank">abstract</a><span class="tagsep">|</span>
+                          <a class="tag" href="cites/eamt2023.bib" target="_blank">cite</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
                 <div class="row text-center py-4">
                     <div class="mx-auto mt-2">
                         <img class="img-fluid instilogo p-1" src="images/bitspilani.png">
@@ -128,7 +160,7 @@
 
      <!-- Grey bar with copyright symbol -->
      <div class="grey-bar text-center py-7">
-        <p>&copy; Varun Gumma, 2023</p>
+        <p class="noter">&copy; Copyright 2023 Varun Gumma. All rights reserved.</p>
     </div>
 
     <!-- Optional JavaScript -->

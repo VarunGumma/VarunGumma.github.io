@@ -1,5 +1,5 @@
 // Initialize font properties
-const fontname = "Ubuntu";
+const fontname = "Monospace";
 const fontweights = [300, 400]
 
 // Color properties
@@ -112,3 +112,9 @@ $(".institution").css("color", insttitlecolor);
 $(".institution").css("font-size", insttitlesize);
 $(".years").css("color", instyearcolor);
 $(".years").css("font-size", instyearsize);
+
+$(document).ready(function() {
+    $('.header').click(function() {
+      $('.dropdown-container').toggleClass('active');
+    });
+  });
