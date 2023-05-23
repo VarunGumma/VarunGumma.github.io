@@ -4,11 +4,9 @@
 }
 
 a:hover {
-    /* font-weight: 400; */
     text-decoration: none;
     transition-duration: 0.3s;
     transition-timing-function: linear;
-    /* color: #444; */
 }
 
 .noter {
@@ -41,66 +39,86 @@ a:hover {
 }
 
 
-  .arrow {
-    transition: transform 0.3s;
-  }
-  
-  .hidden {
-    display: none;
-  }
+.arrow {
+  transition: transform 0.3s;
+}
+
+.hidden {
+  display: none;
+}
 
 
-  .cv-link {
-    color: red;
-  }
-  
-  .google-scholar-link {
-    color: blue;
-  }
-  
-  .email-link {
-    color: green;
-  }
-  
-  .github-link {
-    color: orchid;
-  }
-  
-  .linkedin-link {
-    color: purple;
-  }
-  
-  .twitter-link {
-    color: teal;
-  }
+.cv-link {
+  color: red;
+}
 
-  .paper-link {
-    color: maroon
-  }
+.google-scholar-link {
+  color: blue;
+}
 
-  .grey-bar {
-    position: float;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    padding: 1px;
-    z-index: 999;
-  }
+.email-link {
+  color: green;
+}
+
+.github-link {
+  color: orchid;
+}
+
+.linkedin-link {
+  color: purple;
+}
+
+.twitter-link {
+  color: teal;
+}
+
+.paper-link {
+  color: maroon
+}
+
+.grey-bar {
+  position: relative;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 4px 1px; /* Adjust the top and bottom padding as needed */
+  z-index: 999;
+}
+
+.left-half {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  background-color: black;
+  padding: 2px 0; /* Adjust the top and bottom padding as needed */
+  border-right: 1px solid white;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+}
+
+.right-half {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  background-color: pink;
+  padding: 2px 0; /* Adjust the top and bottom padding as needed */
+  box-sizing: border-box;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
 
 
 .profilepic {
-    width: 200px;
-    border-radius: 25%;
-    /* filter: grayscale(100%); */
+  width: 200px;
+  border-radius: 25%;
 }
 
 @media (min-width: 768px) {
     .fixed-posi {
-        /* width: 50%;
-            margin-left: 50%;
-            min-height:100%; */
         position: fixed;
     }
 }
@@ -119,16 +137,14 @@ a:hover {
         border-radius: 25%;
         padding-top: 0px !important;
         padding-bottom: 0px !important;
-        /* filter: grayscale(100%); */
     }
 
     .menur {
         padding-top: 18px !important;
     }
-
 }
 
 .thisauthor {
-          color: #111;
-          text-decoration: underline !important;
-    }
+  color: #111;
+  text-decoration: underline !important;
+}

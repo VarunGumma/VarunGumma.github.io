@@ -1,5 +1,5 @@
 // Initialize font properties
-const fontname = "Ubuntu";
+const fontname = "Merriweather Sans";
 const fontweights = [300, 400]
 
 // Color properties
@@ -66,15 +66,6 @@ const insttitlesize = "12px";
 const instyearcolor = accentcolor;
 const instyearsize = "11px";
 
-//     .institution {
-//             font - size: 12px;
-//             color: #222;
-//         }
-//   .years {
-//             font - size: 11px;
-//             color: #888;
-//         }
-
 // Works for sans serif, change otherwise
 $("head").append("<link href='https://fonts.googleapis.com/css2?family=" + fontname + ":wght@" + fontweights.join(';') + "&display=swap' rel='stylesheet' type='text/css'>");
 $("body").css("font-family", fontname);
@@ -120,3 +111,12 @@ $(document).ready(function() {
     dropdownContainer.toggleClass('active');
   });
 });
+
+var countElement = document.getElementById("count");
+var visitorCount = sessionStorage.getItem("visitorCount") || 0;
+if (!sessionStorage.getItem("visited")) {
+  visitorCount++;
+  sessionStorage.setItem("visited", true);
+}
+countElement.textContent = visitorCount;
+sessionStorage.setItem("visitorCount", visitorCount);
