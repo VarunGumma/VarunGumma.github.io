@@ -1,10 +1,10 @@
 // Initialize font properties
-const fontname = "Merriweather Sans";
+const fontname = "Quattrocento Sans";
 const fontweights = [300, 400]
 
 // Color properties
-const basecolor = "#777";
-const accentcolor = "#00a";
+const basecolor = "#000";
+const accentcolor = "#222";
 const highlightcolor = "#111";
 
 // const basecolor = "#888";
@@ -13,7 +13,7 @@ const highlightcolor = "#111";
 
 // Body properties
 const bodyfontweight = 300;
-const bodyfontsize = "12pt";
+const bodyfontsize = "13pt";
 const backgroundcolor = "#fff";
 
 // Link properties
@@ -88,7 +88,7 @@ $(".header").css("text-decoration", headerdecoration);
 $(".name").css("color", namecolor);
 $(".name").css("font-size", namefontsize);
 
-$(".papertitle").css("color", ptitlecolor + " !important");
+$(".papertitle").css("color", "#FF4500");
 $(".papertitle").css("font-size", ptitlefontsize);
 $(".papertitle").css("font-weight", ptitleweight);
 $(".papertitle").css("text-decoration", ptitledecoration);
@@ -111,12 +111,3 @@ $(document).ready(function() {
     dropdownContainer.toggleClass('active');
   });
 });
-
-var countElement = document.getElementById("count");
-var visitorCount = sessionStorage.getItem("visitorCount") || 0;
-if (!sessionStorage.getItem("visited")) {
-  visitorCount++;
-  sessionStorage.setItem("visited", true);
-}
-countElement.textContent = visitorCount;
-sessionStorage.setItem("visitorCount", visitorCount);

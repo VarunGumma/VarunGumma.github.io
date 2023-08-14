@@ -85,33 +85,6 @@ a:hover {
   z-index: 999;
 }
 
-.left-half {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  background-color: black;
-  padding: 2px 0; /* Adjust the top and bottom padding as needed */
-  border-right: 1px solid white;
-  box-sizing: border-box;
-  text-align: center;
-  color: white;
-}
-
-.right-half {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50%;
-  background-color: pink;
-  padding: 2px 0; /* Adjust the top and bottom padding as needed */
-  box-sizing: border-box;
-  text-align: center;
-  color: black;
-  font-weight: bold;
-}
-
-
 .profilepic {
   width: 200px;
   border-radius: 25%;
@@ -147,4 +120,5 @@ a:hover {
 .thisauthor {
   color: #111;
   text-decoration: underline !important;
+  font-weight: bold !important; /* This will make the text bold */
 }
