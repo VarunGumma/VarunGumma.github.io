@@ -145,13 +145,10 @@
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-        <!-- Add a down arrow beside the heading -->
         <p class="header pt-5">
-                    Publications
-                    <span id=" publication-arrow" class="arrow" style="font-size: smaller;">&#9654;</span>
+          Publications
+          <span id="publication-arrow" class="arrow" style="font-size: smaller;"><i class="fas fa-chevron-right"></i></span>
         </p>
-
-        <!-- Wrap the publications in a dropdown container -->
         <div id="publications-dropdown" class="dropdown-container">
           <div class="dropdown-content">
 
@@ -217,31 +214,31 @@
 
         <p class="header pt-5">
           News
-          <span id="news-arrow" class="arrow" style="font-size: smaller;">&#9654;</span>
+          <span id="news-arrow" class="arrow" style="font-size: smaller;"><i class="fas fa-chevron-right"></i></span>
         </p>
-
-        <div id="news-dropdown" class="dropdown-container">
-          <div class="dropdown-content">
-            <div class="py-2">
-              <p class="news my-2 pl-2 news-point">
-                <span class="date-box">
-                  <span class="orange-box">
-                    <span class="white-text">April, 2023</span>
-                  </span> &emsp;
-                </span>
-                <span class="description">Joined Microsoft Research India (MSRI) as a Research Intern</span>
-              </p>
-              <p class="news my-2 pl-2 news-point">
-                <span class="date-box">
-                  <span class="orange-box">
-                    <span class="white-text">July, 2023</span>
-                  </span> &emsp;
-                </span>
-                <span class="description">Converted from Research Intern to SCAI Center Fellow at MSRI</span>
-              </p>
+        <div id="news-dropdown" class="dropdown-container" style="display: none;"> <!-- Initially hidden -->
+            <div class="dropdown-content">
+                <div class="py-2">
+                    <p class="news my-2 pl-2 news-point">
+                        <span class="date-box">
+                            <span class="orange-box">
+                                <span class="white-text">April, 2023</span>
+                            </span> &emsp;
+                        </span>
+                        <span class="description">Joined Microsoft Research India (MSRI) as a Research Intern</span>
+                    </p>
+                    <p class="news my-2 pl-2 news-point">
+                        <span class="date-box">
+                            <span class="orange-box">
+                                <span class="white-text">July, 2023</span>
+                            </span> &emsp;
+                        </span>
+                        <span class="description">Converted from Research Intern to SCAI Center Fellow at MSRI</span>
+                    </p>
+                </div>
             </div>
-          </div>
         </div>
+
 
         <div class="row text-center py-4">
           <div class="mx-auto mt-2">
@@ -273,8 +270,9 @@
 
 
   <div class="grey-bar text-center py-7">
-      <p class="noter">&copy; Copyright 2023 Varun Gumma. All rights reserved.</p>
+      <p class="noter_v2">&copy; Copyright 2023 Varun Gumma. All rights reserved.</p>
   </div>
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

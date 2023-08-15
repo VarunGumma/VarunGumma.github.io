@@ -104,10 +104,39 @@ $(".institution").css("font-size", insttitlesize);
 $(".years").css("color", instyearcolor);
 $(".years").css("font-size", instyearsize);
 
-
 $(document).ready(function() {
   $('.header').click(function() {
     var dropdownContainer = $(this).next('.dropdown-container');
     dropdownContainer.toggleClass('active');
   });
+});
+
+document.getElementById('news-arrow').addEventListener('click', function() {
+  const dropdown = document.getElementById('news-dropdown');
+  const arrowIcon = document.querySelector('#news-arrow i');
+  
+  if(dropdown.style.display === 'none' || dropdown.style.display === '') {
+      dropdown.style.display = 'block';
+      arrowIcon.classList.remove('fa-chevron-right');
+      arrowIcon.classList.add('fa-chevron-down');
+  } else {
+      dropdown.style.display = 'none';
+      arrowIcon.classList.remove('fa-chevron-down');
+      arrowIcon.classList.add('fa-chevron-right');
+  }
+});
+
+document.getElementById('publication-arrow').addEventListener('click', function() {
+  const dropdown = document.getElementById('publications-dropdown');
+  const arrowIcon = document.querySelector('#publication-arrow i');
+  
+  if(dropdown.style.display === 'none' || dropdown.style.display === '') {
+      dropdown.style.display = 'block';
+      arrowIcon.classList.remove('fa-chevron-right');
+      arrowIcon.classList.add('fa-chevron-down');
+  } else {
+      dropdown.style.display = 'none';
+      arrowIcon.classList.remove('fa-chevron-down');
+      arrowIcon.classList.add('fa-chevron-right');
+  }
 });
