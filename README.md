@@ -1,5 +1,5 @@
-# My Github Page :: Work in Progress !!
+# My Github Page
 
-> Website template: [SebastinSanty minimal-research-theme](https://github.com/SebastinSanty/minimal-research-theme)
+ - _Website template:_ [SebastinSanty minimal-research-theme](https://github.com/SebastinSanty/minimal-research-theme)
 
-> CV Template: [SebastinSanty Just-another-Research-CV](https://github.com/SebastinSanty/Just-Another-Research-CV)
+ - _CV Template:_ [SebastinSanty Just-another-Research-CV](https://github.com/SebastinSanty/Just-Another-Research-CV)
