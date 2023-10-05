@@ -1,4 +1,4 @@
-# My Github Page
+# My Personal Website (powered by GitHub)
 
  - _Website template:_ [SebastinSanty minimal-research-theme](https://github.com/SebastinSanty/minimal-research-theme)
 
