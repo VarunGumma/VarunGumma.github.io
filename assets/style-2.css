@@ -39,7 +39,7 @@ a:hover {
 }
 
 .menulink:hover {
-    color: orange
+    color: green;
 }
 
 
@@ -53,31 +53,31 @@ a:hover {
 
 
 .cv-link {
-  color: red;
+  color: "#DB4437";
 }
 
 .google-scholar-link {
-  color: blue;
+  color: "#4285F4";
 }
 
 .email-link {
-  color: green;
+  color: "#0F9D58";
 }
 
 .github-link {
-  color: orchid;
+  color: "#F4B400";
 }
 
 .linkedin-link {
-  color: purple;
+  color: "#DB4437";
 }
 
 .twitter-link {
-  color: teal;
+  color: "#4285F4";
 }
 
 .paper-link {
-  color: maroon
+  color: "#0F9D58";
 }
 
 .grey-bar {

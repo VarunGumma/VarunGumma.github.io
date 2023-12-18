@@ -1,5 +1,5 @@
 // Initialize font properties
-const fontname = "Quattrocento Sans";
+const fontname = "georgia";
 const fontweights = [300, 400]
 
 // Color properties
@@ -7,36 +7,26 @@ const basecolor = "#000";
 const accentcolor = "#222";
 const highlightcolor = "#111";
 
-// const basecolor = "#888";
-// const accentcolor = "#222";
-// const highlight = "#111";
-
 // Body properties
 const bodyfontweight = 300;
-const bodyfontsize = "12pt";
+const bodyfontsize = "10pt";
 const backgroundcolor = "#fff";
 
 // Link properties
 // const acolor = accentcolor;
 const adecoration = "none";
-// const ahovercolor = accentcolor;
-// const ahoverduration = "0.3s";
-// const ahoverdecoration = "none"; //none, underline, overline, dotted, color (https://www.w3schools.com/cssref/pr_text_text-decoration.asp)
 
 // Menu properties
 const menucolor = basecolor;
-const menufontsize = "14pt";
+const menufontsize = "12pt";
 const menudecoration = "none";
-// const menuhover = accentcolor;
-// const menuhoverduration = "0.3s";
-// const menuhoverdecoration = "none"; //none, underline, overline, dotted, color (https://www.w3schools.com/cssref/pr_text_text-decoration.asp)
 
 // Header properties
 const headercolor = accentcolor;
 const headerfontsize = "18pt";
 const headerdecoration = "none";
 const namecolor = highlightcolor;
-const namefontsize = "23pt";
+const namefontsize = "20pt";
 
 
 // Publication properties
