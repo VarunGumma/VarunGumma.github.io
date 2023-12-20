@@ -38,9 +38,9 @@ a:hover {
     border-left: 1px solid #ddd;
 }
 
-.menulink:hover {
+/* .menulink:hover {
     color: green;
-}
+} */
 
 
 .arrow {
@@ -53,31 +53,31 @@ a:hover {
 
 
 .cv-link {
-  color: "#DB4437";
+  color: #DB4437;
 }
 
 .google-scholar-link {
-  color: "#4285F4";
+  color: #4285F4;
 }
 
 .email-link {
-  color: "#0F9D58";
+  color: #0F9D58;
 }
 
 .github-link {
-  color: "#F4B400";
+  color: #F4B400;
 }
 
 .linkedin-link {
-  color: "#DB4437";
+  color: #ed6900;
 }
 
 .twitter-link {
-  color: "#4285F4";
+  color: #5bbdc7;
 }
 
 .paper-link {
-  color: "#0F9D58";
+  color: #0F9D58;
 }
 
 .grey-bar {
