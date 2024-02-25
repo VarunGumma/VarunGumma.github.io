@@ -1,5 +1,5 @@
 // Initialize font properties
-const fontname = "georgia";
+const fontname = "Proxima Nova";
 const fontweights = [300, 400]
 
 // Color properties
