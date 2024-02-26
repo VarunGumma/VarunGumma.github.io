@@ -38,9 +38,9 @@ a:hover {
     border-left: 1px solid #ddd;
 }
 
-/* .menulink:hover {
+.menulink:hover {
     color: green;
-} */
+}
 
 
 .arrow {
@@ -53,31 +53,31 @@ a:hover {
 
 
 .cv-link {
-  color: #DB4437;
+  color: #4b2e83;
 }
 
 .google-scholar-link {
-  color: #4285F4;
+  color: #4b2e83;
 }
 
 .email-link {
-  color: #0F9D58;
+  color: #4b2e83;
 }
 
 .github-link {
-  color: #F4B400;
+  color: #4b2e83;
 }
 
 .linkedin-link {
-  color: #ed6900;
+  color: #4b2e83;
 }
 
 .twitter-link {
-  color: #5bbdc7;
+  color: #4b2e83;
 }
 
 .paper-link {
-  color: #0F9D58;
+  color: #4b2e83;
 }
 
 .grey-bar {
@@ -85,7 +85,7 @@ a:hover {
   bottom: 0;     
   left: 0;    
   width: 100%;   
-  background-color: black;
+  background-color: #4b2e83;
   color: white;
   padding: 4px 1px;
   z-index: 999; 

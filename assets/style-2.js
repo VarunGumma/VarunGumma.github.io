@@ -1,5 +1,5 @@
 // Initialize font properties
-const fontname = "Proxima Nova";
+const fontname = "Ubuntu";
 const fontweights = [300, 400]
 
 // Color properties
@@ -18,7 +18,7 @@ const adecoration = "none";
 
 // Menu properties
 const menucolor = basecolor;
-const menufontsize = "12pt";
+const menufontsize = "13pt";
 const menudecoration = "none";
 
 // Header properties
@@ -32,7 +32,7 @@ const namefontsize = "20pt";
 // Publication properties
 const ptitlecolor = accentcolor;
 const ptitlefontsize = bodyfontsize;
-const ptitleweight = bodyfontweight;
+const ptitleweight = "bold";
 const ptitledecoration = "none";
 const ptitlestyle = "normal";
 
@@ -78,7 +78,7 @@ $(".header").css("text-decoration", headerdecoration);
 $(".name").css("color", namecolor);
 $(".name").css("font-size", namefontsize);
 
-$(".papertitle").css("color", "#FF4500");
+$(".papertitle").css("color", "#4b2e83");
 $(".papertitle").css("font-size", ptitlefontsize);
 $(".papertitle").css("font-weight", ptitleweight);
 $(".papertitle").css("text-decoration", ptitledecoration);
