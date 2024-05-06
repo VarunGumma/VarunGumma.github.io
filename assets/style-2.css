@@ -81,10 +81,10 @@ a:hover {
 }
 
 .grey-bar {
-  position: relative; 
-  bottom: 0;     
-  left: 0;    
-  width: 100%;   
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background-color: #4b2e83;
   color: white;
   padding: 4px 1px;
