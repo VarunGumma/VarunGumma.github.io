@@ -53,31 +53,31 @@ a:hover {
 
 
 .cv-link {
-  color: #4b2e83;
+  color: #B51E21;
 }
 
 .google-scholar-link {
-  color: #4b2e83;
+  color: #B51E21;
 }
 
 .email-link {
-  color: #4b2e83;
+  color: #B51E21;
 }
 
 .github-link {
-  color: #4b2e83;
+  color: #B51E21;
 }
 
 .linkedin-link {
-  color: #4b2e83;
+  color: #B51E21;
 }
 
 .twitter-link {
-  color: #4b2e83;
+  color: #B51E21;
 }
 
 .paper-link {
-  color: #4b2e83;
+  color: #B51E21;
 }
 
 .grey-bar {
@@ -85,7 +85,7 @@ a:hover {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #4b2e83;
+  background-color: #B51E21;
   color: white;
   padding: 4px 1px;
   z-index: 999; 
@@ -127,4 +127,18 @@ a:hover {
   color: #111;
   text-decoration: underline !important;
   font-weight: bold !important; /* This will make the text bold */
+}
+
+.badge {
+  display: inline-block;
+  padding: .25em .4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  color: #fff; /* white color */
+  background-color: #FFD700; /* gold background */
 }

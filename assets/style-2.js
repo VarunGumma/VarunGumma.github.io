@@ -1,5 +1,5 @@
 // Initialize font properties
-const fontname = "Ubuntu";
+const fontname = "Nunito";
 const fontweights = [300, 400]
 
 // Color properties
@@ -9,7 +9,7 @@ const highlightcolor = "#111";
 
 // Body properties
 const bodyfontweight = 300;
-const bodyfontsize = "10pt";
+const bodyfontsize = "11pt";
 const backgroundcolor = "#fff";
 
 // Link properties
@@ -78,7 +78,7 @@ $(".header").css("text-decoration", headerdecoration);
 $(".name").css("color", namecolor);
 $(".name").css("font-size", namefontsize);
 
-$(".papertitle").css("color", "#4b2e83");
+$(".papertitle").css("color", "#B51E21");
 $(".papertitle").css("font-size", ptitlefontsize);
 $(".papertitle").css("font-weight", ptitleweight);
 $(".papertitle").css("text-decoration", ptitledecoration);
