@@ -204,7 +204,8 @@ hr {
     position: relative;
     margin: -10px 0 0 15px;
     float: right;
-    border-radius: 50%
+    border-radius: 50%;
+    object-fit: contain
 }
 
 p .content .profile-picture {
