@@ -1,15 +1,4 @@
 <!DOCTYPE html>
-<link rel="preconnect" href="https://rsms.me/">
-<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-<link
-    href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Inconsolata:wght@200..900&family=Nunito:ital,wght@0,300;1,300&family=Raleway:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap"
-    rel="stylesheet">
-
 <html lang="en">
 
 <head>
@@ -23,8 +12,28 @@
 
 
     <meta name="description" content="">
-    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <link rel="alternate" type="application/rss+xml" title="Varun Gumma RSS" href="feed.xml" />
+
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('theme');
+                if (!t) { t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+                document.documentElement.setAttribute('data-theme', t);
+            } catch (e) { }
+        })();
+    </script>
+
+    <!-- Fonts and Icons -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="css/main.css">
 
 
@@ -49,30 +58,22 @@
     <div class="wrapper">
         <div class="navbar container">
 
-            <img id="ins-logo" src="images/uw.png" />
+            <img id="ins-logo" src="images/Nanyang_Technological_University-Logo.wine.svg"
+                alt="Nanyang Technological University logo" />
 
 
             <a id="author-name" class="alignable pull-left" href="https://varungumma.github.io">Varun Gumma</a>
             <ul id="navlist" class="alignable pull-right navbar-ul">
 
 
-                <li class="alignable pull-left nav-list"><a href="index.html">About</a>
-
-
-                    /
-
+                <li class="alignable pull-left nav-list"><a href="index.html">About</a></li>
+                <li class="alignable pull-left nav-list"><a href="publications.html">Publications</a></li>
+                <li class="alignable pull-left nav-list"><a target="_blank" href="CV.pdf">Resume</a></li>
+                <li class="alignable pull-left nav-list">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
                 </li>
-
-
-                <li class="alignable pull-left nav-list"><a href="publications.html">Publications</a>
-
-
-                    /
-
-                </li>
-
-
-                <li class="alignable pull-left nav-list"><a target="_blank" href="CV.pdf">Resume</a>
 
 
             </ul>
@@ -85,24 +86,34 @@
             <style>
                 h3 {
                     margin-top: 20px;
-                    /* Adjust as needed */
                     margin-bottom: 10px;
-                    /* Adjust as needed */
                 }
 
                 h2 {
                     margin-top: 20px;
-                    /* Adjust as needed */
                     margin-bottom: 10px;
-                    /* Adjust as needed */
                 }
             </style>
 
 
 
             <h2 class="mt-4">Publications</h2>
-            🏠 = Conference, 📔 = Journal, 👓 = Workshop, </br>
-            🥇 = Best Paper, * = Equal Contribution, † = Equal Mentorship
+            <div class="pub-legend" aria-label="Legend for publication badges">
+                <span class="chip clickable" data-filter="conference" role="button" tabindex="0" aria-pressed="false"
+                    title="Conference"><i class="fas fa-landmark" aria-hidden="true"></i>
+                    Conference</span>
+                <span class="chip clickable" data-filter="journal" role="button" tabindex="0" aria-pressed="false"
+                    title="Journal"><i class="fas fa-book-open" aria-hidden="true"></i> Journal</span>
+                <span class="chip clickable" data-filter="workshop" role="button" tabindex="0" aria-pressed="false"
+                    title="Workshop"><i class="fas fa-glasses" aria-hidden="true"></i> Workshop</span>
+                <span class="chip clickable" data-filter="preprint" role="button" tabindex="0" aria-pressed="false"
+                    title="Preprint"><i class="fas fa-file" aria-hidden="true"></i> Preprint</span>
+                <span class="chip clickable" data-filter="best" role="button" tabindex="0" aria-pressed="false"
+                    title="Best Paper">🥇 Best Paper</span>
+                <span class="legend-break" aria-hidden="true"></span>
+                <span class="chip disabled" aria-disabled="true" title="Equal Contribution">♣ Equal Contribution</span>
+                <span class="chip disabled" aria-disabled="true" title="Equal Mentorship">♠ Equal Mentorship</span>
+            </div>
 
             <h3>Preprints</h3>
 
@@ -119,31 +130,12 @@
                 <p>Preprint (2024)</p>
                 <p>
                     <a class="btn btn-outline-primary" href="https://arxiv.org/abs/2410.13671" target="_blank">ABS</a>
-                    <a class="btn btn-outline-primary" href="https://arxiv.org/pdf/2410.13671"
-                        target="_blank">PDF</a>
+                    <a class="btn btn-outline-primary" href="https://arxiv.org/pdf/2410.13671" target="_blank">PDF</a>
                 </p>
             </div>
 
 
-            <div class="publication">
-                <h4><a href="publications/beyond_metrics">Beyond Metrics: Evaluating LLMs' Effectiveness in Culturally Nuanced, Low-Resource Real-World Scenarios</a></h4>
-                <p>
-                    Millicent Ochieng, 
-                    <u>Varun Gumma</u>, 
-                    Sunayana Sitaram, 
-                    Jindong Wang, 
-                    Vishrav Chaudhary, 
-                    Keshet Ronen, 
-                    Kalika Bali, 
-                    Jacki O'Neill
-                </p>
-                <p>Preprint (2024)</p>
-                <p>
-                    <a class="btn btn-outline-primary" href="https://arxiv.org/abs/2406.00343" target="_blank">ABS</a>
-                    <a class="btn btn-outline-primary" href="https://arxiv.org/pdf/2406.00343"
-                        target="_blank">PDF</a>
-                </p>
-            </div>
+
 
 
 
@@ -158,19 +150,43 @@
                     Pranjal Chitale*,
                     Kalika Bali
                 </p>
-                <p>🏠 NAACL (2025)</p>
+                <p class="pub-meta"><i class="fas fa-landmark" aria-hidden="true"></i> NAACL (2025)</p>
                 <p>
-                    <a class="btn btn-outline-primary" href="https://aclanthology.org/2025.naacl-long.366/" target="_blank">ABS</a>
+                    <a class="btn btn-outline-primary" href="https://aclanthology.org/2025.naacl-long.366/"
+                        target="_blank">ABS</a>
                     <a class="btn btn-outline-primary" href="https://aclanthology.org/2025.naacl-long.366.pdf"
                         target="_blank">PDF</a>
                     <a class="btn btn-outline-primary" href="https://github.com/VarunGumma/fairseq"
                         target="_blank">Code</a>
-                    <a class="btn btn-outline-primary" href="https://huggingface.co/collections/prajdabre/indictrans2-rope-6742ddac669a05db0804db35"
+                    <a class="btn btn-outline-primary"
+                        href="https://huggingface.co/collections/prajdabre/indictrans2-rope-6742ddac669a05db0804db35"
                         target="_blank">Models</a>
                 </p>
             </div>
 
 
+
+            <div class="publication">
+                <h4><a href="publications/beyond_metrics">Beyond Metrics: Evaluating LLMs' Effectiveness in Culturally
+                        Nuanced, Low-Resource Real-World Scenarios</a></h4>
+                <p>
+                    Millicent Ochieng,
+                    <u>Varun Gumma</u>,
+                    Sunayana Sitaram,
+                    Jindong Wang,
+                    Vishrav Chaudhary,
+                    Keshet Ronen,
+                    Kalika Bali,
+                    Jacki O'Neill
+                </p>
+                <p class="pub-meta"><i class="fas fa-glasses" aria-hidden="true"></i> AfricaNLP (2025)</p>
+                <p>
+                    <a class="btn btn-outline-primary" href="https://aclanthology.org/2025.africanlp-1.33/"
+                        target="_blank">ABS</a>
+                    <a class="btn btn-outline-primary" href="https://aclanthology.org/2025.africanlp-1.33.pdf"
+                        target="_blank">PDF</a>
+                </p>
+            </div>
 
             <div class="publication">
                 <h4><a href="publications/contamination2024">Contamination Report for Multilingual Benchmarks</a></h4>
@@ -179,7 +195,7 @@
                     <u>Varun Gumma*</u>,
                     Sunyana Sitaram
                 </p>
-                <p>👓 EvalEval @ NEURIPS (2024)</p>
+                <p class="pub-meta"><i class="fas fa-glasses" aria-hidden="true"></i> EvalEval @ NEURIPS (2024)</p>
                 <p>
                     <a class="btn btn-outline-primary" href="https://arxiv.org/abs/2410.16186" target="_blank">ABS</a>
                     <a class="btn btn-outline-primary" href="https://arxiv.org/abs/2410.16186/pdf"
@@ -198,9 +214,10 @@
                     Manohar Swaminathan,
                     Sunayana Sitaram
                 </p>
-                <p>🏠 EMNLP (2024)</p>
+                <p class="pub-meta"><i class="fas fa-landmark" aria-hidden="true"></i> EMNLP (2024)</p>
                 <p>
-                    <a class="btn btn-outline-primary" href="https://aclanthology.org/2024.emnlp-main.451/" target="_blank">ABS</a>
+                    <a class="btn btn-outline-primary" href="https://aclanthology.org/2024.emnlp-main.451/"
+                        target="_blank">ABS</a>
                     <a class="btn btn-outline-primary" href="https://aclanthology.org/2024.emnlp-main.451.pdf"
                         target="_blank">PDF</a>
                     <a class="btn btn-outline-primary" href="https://github.com/microsoft/PARIKSHA"
@@ -225,7 +242,7 @@
                     Vivek Seshadri,
                     Kalika Bali
                 </p>
-                <p>🏠 ACM FAccT (2024)</p>
+                <p class="pub-meta"><i class="fas fa-landmark" aria-hidden="true"></i> ACM FAccT (2024)</p>
                 <p>
                     <a class="btn btn-outline-primary" href="https://dl.acm.org/doi/10.1145/3630106.3659017"
                         target="_blank">ABS</a>
@@ -244,7 +261,7 @@
                     Kalika Bali,
                     Sunayana Sitaram
                 </p>
-                <p>🏠 ACL Findings (2024)</p>
+                <p class="pub-meta"><i class="fas fa-landmark" aria-hidden="true"></i> ACL Findings (2024)</p>
                 <p>
                     <a class="btn btn-outline-primary" href="https://aclanthology.org/2024.findings-naacl.148/"
                         target="_blank">ABS</a>
@@ -272,7 +289,7 @@
                     Kalika Bali,
                     SunayanaSitaram
                 </p>
-                <p>🏠 NAACL (2024)</p>
+                <p class="pub-meta"><i class="fas fa-landmark" aria-hidden="true"></i> NAACL (2024)</p>
                 <p>
                     <a class="btn btn-outline-primary" href="https://aclanthology.org/2024.naacl-long.143/"
                         target="_blank">ABS</a>
@@ -296,7 +313,7 @@
                     Kalika Bali,
                     Sunayana Sitaram
                 </p>
-                <p>🏠 ACL Findings (2024)</p>
+                <p class="pub-meta"><i class="fas fa-landmark" aria-hidden="true"></i> ACL Findings (2024)</p>
                 <p>
                     <a class="btn btn-outline-primary" href="https://aclanthology.org/2024.findings-eacl.71"
                         target="_blank">ABS</a>
@@ -318,7 +335,7 @@
                     Kabir Ahuja,
                     Sunayana Sitaram
                 </p>
-                <p>🏠 EACL (2024)</p>
+                <p class="pub-meta"><i class="fas fa-landmark" aria-hidden="true"></i> EACL (2024)</p>
                 <p>
                     <a class="btn btn-outline-primary" href="https://aclanthology.org/2024.eacl-long.37"
                         target="_blank">ABS</a>
@@ -339,7 +356,7 @@
                     Vivek Seshadri,
                     Kalika Bali
                 </p>
-                <p>👓 ComputEL @ EACL (2024)</p>
+                <p class="pub-meta"><i class="fas fa-glasses" aria-hidden="true"></i> ComputEL @ EACL (2024)</p>
                 <p>
                     <a class="btn btn-outline-primary" href="https://aclanthology.org/2024.computel-1.11/"
                         target="_blank">ABS</a>
@@ -372,7 +389,7 @@
                     Raj Dabre,
                     Anoop Kunchukuttan
                 </p>
-                <p>📔 TMLR (2023)</p>
+                <p class="pub-meta"><i class="fas fa-book-open" aria-hidden="true"></i> TMLR (2023)</p>
                 <p>
                     <a class="btn btn-outline-primary" href="https://openreview.net/forum?id=vfT4YuzAYA"
                         target="_blank">ABS</a>
@@ -380,7 +397,8 @@
                         target="_blank">PDF</a>
                     <a class="btn btn-outline-primary" href="https://github.com/AI4Bharat/IndicTrans2"
                         target="_blank">Code</a>
-                        <a class="btn btn-outline-primary" href="https://huggingface.co/collections/ai4bharat/indictrans2-664ccb91d23bbae0d681c3ca"
+                    <a class="btn btn-outline-primary"
+                        href="https://huggingface.co/collections/ai4bharat/indictrans2-664ccb91d23bbae0d681c3ca"
                         target="_blank">Models</a>
                 </p>
             </div>
@@ -395,7 +413,7 @@
                     Raj Dabre,
                     Pratyush Kumar
                 </p>
-                <p>🏠 EAMT (2023)</p>
+                <p class="pub-meta"><i class="fas fa-landmark" aria-hidden="true"></i> EAMT (2023)</p>
                 <p>
                     <a class="btn btn-outline-primary" href="https://aclanthology.org/2023.eamt-1.11/"
                         target="_blank">ABS</a>
@@ -419,7 +437,7 @@
                     Saptarshi Das,
                     Jaideep Vaidya
                 </p>
-                <p>🏠 SECRYPT (2022)</p>
+                <p class="pub-meta"><i class="fas fa-landmark" aria-hidden="true"></i> SECRYPT (2022)</p>
                 <p>
                     <a class="btn btn-outline-primary"
                         href="https://www.scitepress.org/Link.aspx?doi=10.5220/0011272400003283" target="_blank">ABS</a>
@@ -439,10 +457,255 @@
 
 
 <!-- <a href="https://www.annavignet.com/" target="_blank"> -->
-<img src="images/yiyi.png" alt="Description of the image"
-    style="position: fixed; bottom: 0; right: 0; width: 80px; height: auto;">
+<img src="images/yiyi.png" alt="Decorative illustration"
+    style="position: fixed; bottom: 12px; right: 12px; width: 80px; height: auto; opacity: 0.85;">
 <!-- </a> -->
 
 <footer>
-
+    <div class="container" style="text-align:center; padding: 12px 0 20px; color: inherit;">
+        <small class="visitor">Visitors: <span id="visitor-count">—</span></small>
+    </div>
 </footer>
+
+<script>
+    (function () {
+        const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (prefersReduced) return;
+        const content = document.querySelector('.container.content');
+        if (!content) return;
+        const items = Array.from(content.children);
+        items.forEach((el, i) => {
+            el.classList.add('reveal');
+            el.style.transitionDelay = (Math.min(i, 6) * 60) + 'ms';
+        });
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    io.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.08 });
+        items.forEach(el => io.observe(el));
+    })();
+</script>
+<script>
+    (function () {
+        var btn = document.getElementById('theme-toggle');
+        if (!btn) return;
+        function setTheme(t) {
+            document.documentElement.setAttribute('data-theme', t);
+            try { localStorage.setItem('theme', t); } catch (e) { }
+            var icon = btn.querySelector('i');
+            if (icon) {
+                icon.classList.remove('fa-sun', 'fa-moon');
+                icon.classList.add(t === 'dark' ? 'fa-sun' : 'fa-moon');
+            }
+        }
+        var current = document.documentElement.getAttribute('data-theme') || 'light';
+        setTheme(current);
+        btn.addEventListener('click', function () { setTheme((document.documentElement.getAttribute('data-theme') === 'dark') ? 'light' : 'dark'); });
+    })();
+    (function () {
+        var el = document.getElementById('visitor-count');
+        if (!el) return;
+        var NAMESPACE = 'varun-gumma-github-io';
+        var KEY = 'site-visitors';
+        var API = 'https://api.countapi.xyz';
+        function render(value) { el.textContent = (value == null ? '—' : Number(value).toLocaleString()); }
+        function get() { return fetch(API + '/get/' + NAMESPACE + '/' + KEY).then(function (r) { return r.json(); }); }
+        function hit() { return fetch(API + '/hit/' + NAMESPACE + '/' + KEY).then(function (r) { return r.json(); }); }
+        var visited = null;
+        try { visited = localStorage.getItem('vg_unique_visitor'); } catch (e) { }
+        if (visited) {
+            get().then(function (d) { render(d && d.value); }).catch(function () { render(); });
+        } else {
+            hit().then(function (d) { try { localStorage.setItem('vg_unique_visitor', '1'); } catch (e) { } render(d && d.value); })
+                .catch(function () { get().then(function (d) { render(d && d.value); }).catch(function () { render(); }); });
+        }
+    })();
+</script>
+<script>
+    // Normalize author markers to match legend (♣ equal contribution, ♠ equal mentorship)
+    (function () {
+        const container = document.querySelector('.container.content');
+        if (!container) return;
+        const authorParas = container.querySelectorAll('.publication p');
+        const venueWords = /(Preprint|ACL|NAACL|EMNLP|FAccT|EACL|TMLR|SECRYPT|NEURIPS|Workshop|Journal|Conference)/i;
+        authorParas.forEach(p => {
+            const orig = p.innerHTML;
+            // Heuristic: author lines usually have commas and do not include venue words or action buttons
+            if (!orig.includes(',') || orig.includes('btn') || venueWords.test(orig)) return;
+            let updated = orig;
+            // Replace <sup>*</sup> and <sup>†</sup> first to avoid double superscripting
+            updated = updated.replace(/<sup>\s*\*\s*<\/sup>/g, '<span class="mark" title="Equal Contribution">♣</span>');
+            updated = updated.replace(/<sup>\s*†\s*<\/sup>/g, '<span class="mark" title="Equal Mentorship">♠</span>');
+            // Then replace any stray plain * or † characters
+            updated = updated.replace(/\*/g, '<span class="mark" title="Equal Contribution">♣</span>');
+            updated = updated.replace(/†/g, '<span class="mark" title="Equal Mentorship">♠</span>');
+            if (updated !== orig) {
+                p.innerHTML = updated;
+            }
+        });
+    })();
+</script>
+<script>
+    // Tag publications and enable legend-based filtering (single-select)
+    (function () {
+        const container = document.querySelector('.container.content');
+        if (!container) return;
+        const pubs = Array.from(container.querySelectorAll('.publication'));
+
+        // Helper: mark pub by reading its meta and title/author for badges
+        function tagPublication(pub) {
+            const textBlocks = Array.from(pub.querySelectorAll('p')).map(p => p.textContent.trim()).join(' \n ');
+            const meta = pub.querySelector('.pub-meta')?.textContent || textBlocks;
+            const titleEl = pub.querySelector('h4');
+            const titleText = titleEl ? titleEl.textContent : '';
+            // Type tags
+            if (/\b(TMLR|Journal|Trans\.|Transactions)\b/i.test(meta)) pub.classList.add('journal');
+            if (/\b(NAACL|ACL|EMNLP|FAccT|EACL|EAMT|SECRYPT|NeurIPS|COLING|AAAI|ICLR|ICML|KDD|WWW)\b/i.test(meta)) pub.classList.add('conference');
+            if (/(Workshop|ComputEL|AfricaNLP|@\s*(EACL|ACL|EMNLP|NeurIPS))/i.test(meta) || pub.querySelector('.pub-meta i.fa-glasses')) pub.classList.add('workshop');
+            if (/\bPreprint\b/i.test(textBlocks)) pub.classList.add('preprint');
+            // Best paper
+            if (/\uD83E\uDD47|🥇|Best Paper/i.test(titleText)) pub.classList.add('best');
+            // Author markers (♣ equal contribution, ♠ equal mentorship)
+            const authorLine = pub.querySelector('p');
+            if (authorLine) {
+                const ah = authorLine.innerHTML;
+                if (/♣/.test(ah)) pub.classList.add('equal-contrib');
+                if (/♠/.test(ah)) pub.classList.add('equal-mentorship');
+            }
+        }
+
+        pubs.forEach(tagPublication);
+
+        // Filtering logic
+        const legend = document.querySelector('.pub-legend');
+        if (!legend) return;
+        const chips = Array.from(legend.querySelectorAll('.chip.clickable'));
+        const h2 = container.querySelector('h2');
+        const originalH2 = h2 ? h2.textContent : '';
+        const sectionHeadings = Array.from(container.querySelectorAll('h3'));
+
+        function applyFilter(filter, label) {
+            pubs.forEach(pub => {
+                if (!filter) {
+                    pub.classList.remove('hidden');
+                    return;
+                }
+                if (pub.classList.contains(filter)) {
+                    pub.classList.remove('hidden');
+                } else {
+                    pub.classList.add('hidden');
+                }
+            });
+            // Toggle section headings and main title
+            if (sectionHeadings.length) {
+                sectionHeadings.forEach(h => {
+                    h.style.display = filter ? 'none' : '';
+                });
+            }
+            if (h2) {
+                h2.textContent = filter ? (label || originalH2) : originalH2;
+            }
+        }
+
+        function setActiveChip(activeChip) {
+            chips.forEach(c => {
+                const isActive = c === activeChip;
+                c.classList.toggle('active', isActive);
+                c.setAttribute('aria-pressed', String(isActive));
+            });
+        }
+
+        // Default: no filter (show all)
+        applyFilter(null);
+        setActiveChip(null);
+
+        function onChipActivate(chip) {
+            if (!chip || chip.classList.contains('disabled')) return;
+            const filter = chip.getAttribute('data-filter');
+            if (!filter) return;
+            // Toggle behavior: clicking active chip clears filter
+            const isActive = chip.classList.contains('active');
+            if (isActive) {
+                setActiveChip(null);
+                applyFilter(null);
+            } else {
+                setActiveChip(chip);
+                const label = chip.textContent.trim();
+                applyFilter(filter, label);
+            }
+        }
+
+        chips.forEach(chip => {
+            chip.addEventListener('click', () => onChipActivate(chip));
+            chip.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    onChipActivate(chip);
+                }
+            });
+        });
+    })();
+</script>
+<script>
+    // Ensure venue lines get consistent icons
+    (function () {
+        const container = document.querySelector('.container.content');
+        if (!container) return;
+        const pubs = container.querySelectorAll('.publication');
+        pubs.forEach(pub => {
+            const ps = pub.querySelectorAll('p');
+            ps.forEach(p => {
+                const text = p.textContent.trim();
+                if (!text) return;
+                // Skip action button rows
+                if (p.querySelector('.btn')) return;
+                // Conference/Proceedings
+                if (/\b(NAACL|ACL|EMNLP|FAccT|EACL|EAMT|SECRYPT|NeurIPS|COLING|AAAI|ICLR|ICML|KDD|WWW)\b/i.test(text)) {
+                    if (!p.classList.contains('pub-meta')) {
+                        p.classList.add('pub-meta');
+                    }
+                    if (!p.querySelector('i')) {
+                        p.insertAdjacentHTML('afterbegin', '<i class="fas fa-landmark" aria-hidden="true"></i> ');
+                    }
+                    return;
+                }
+                // Workshop
+                if (/\b(Workshop|ComputEL|AfricaNLP|Workshop@|@\s*EACL|@\s*ACL|@\s*EMNLP)\b/i.test(text)) {
+                    if (!p.classList.contains('pub-meta')) {
+                        p.classList.add('pub-meta');
+                    }
+                    if (!p.querySelector('i')) {
+                        p.insertAdjacentHTML('afterbegin', '<i class="fas fa-glasses" aria-hidden="true"></i> ');
+                    }
+                    return;
+                }
+                // Journal
+                if (/\b(TMLR|Journal|Trans\.|Transactions)\b/i.test(text)) {
+                    if (!p.classList.contains('pub-meta')) {
+                        p.classList.add('pub-meta');
+                    }
+                    if (!p.querySelector('i')) {
+                        p.insertAdjacentHTML('afterbegin', '<i class="fas fa-book-open" aria-hidden="true"></i> ');
+                    }
+                }
+            });
+        });
+    })();
+</script>
+<script>
+    // Ensure your name is underlined and benefits from bold styling
+    (function () {
+        const pubs = document.querySelectorAll('.publication');
+        pubs.forEach(pub => {
+            const authorLine = pub.querySelector('p');
+            if (!authorLine) return;
+            if (!/Varun\s+Gumma/.test(authorLine.textContent)) return;
+            if (authorLine.innerHTML.includes('<u>Varun Gumma</u>')) return;
+            authorLine.innerHTML = authorLine.innerHTML.replace(/Varun\s+Gumma/, '<u>Varun Gumma</u>');
+        });
+    })();
+</script>

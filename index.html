@@ -1,15 +1,4 @@
 <!DOCTYPE html>
-<link rel="preconnect" href="https://rsms.me/">
-<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-<link
-  href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Inconsolata:wght@200..900&family=Nunito:ital,wght@0,300;1,300&family=Raleway:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap"
-  rel="stylesheet">
-
 <html lang="en">
 
 <head>
@@ -23,8 +12,28 @@
 
 
   <meta name="description" content="">
-  <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
   <link rel="alternate" type="application/rss+xml" title="Varun Gumma RSS" href="feed.xml" />
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (!t) { t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) { }
+    })();
+  </script>
+
+  <!-- Fonts and Icons -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="css/main.css">
 
 
@@ -49,31 +58,19 @@
   <div class="wrapper">
     <div class="navbar container">
 
-      <img id="ins-logo" src="images/uw.png" />
-
+      <img id="ins-logo" src="images/Nanyang_Technological_University-Logo.wine.svg"
+        alt="Nanyang Technological University logo" />
 
       <a id="author-name" class="alignable pull-left" href="https://varungumma.github.io">Varun Gumma</a>
       <ul id="navlist" class="alignable pull-right navbar-ul">
-
-
-        <li class="alignable pull-left nav-list"><a href="">About</a>
-
-
-          /
-
+        <li class="alignable pull-left nav-list"><a href="index.html">About</a></li>
+        <li class="alignable pull-left nav-list"><a href="publications.html">Publications</a></li>
+        <li class="alignable pull-left nav-list"><a target="_blank" href="CV.pdf">Resume</a></li>
+        <li class="alignable pull-left nav-list">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+            <i class="fas fa-moon"></i>
+          </button>
         </li>
-
-
-        <li class="alignable pull-left nav-list"><a href="publications.html">Publications</a>
-
-
-          /
-
-        </li>
-
-
-        <li class="alignable pull-left nav-list"><a target="_blank" href="CV.pdf">Resume</a>
-
       </ul>
     </div>
     <div style="clear:both"></div>
@@ -81,18 +78,21 @@
 
     <div class="container content">
 
-      <p><img class="profile-picture" src="images/profile_pic.jpg" /></p>
+      <p><img class="profile-picture" src="images/profile_pic.jpg" alt="Portrait of Varun Gumma" /></p>
 
-      <p>Hey👋! I am Varun, a Pre-Doctoral SCAI-Center Fellow at Microsoft Research India, where I am fortunate to work
-        with <a href="https://www.microsoft.com/en-us/research/people/kalikab/"> Dr. Kalika Bali</a> and <a
-          href="https://www.microsoft.com/en-us/research/people/susitara/"> Dr. Sunayana Sitaram</a>. Prior to this, I
-        was a Master's Student at <a href="https://ai4bharat.iitm.ac.in/"> AI4Bharat</a> and <a
-          href="https://ai4bharat.iitm.ac.in/">IIT Madras</a>, where I was
-        co-advised by <a href="https://prajdabre.github.io/"> Dr. Raj Dabre</a> and <a
-          href="https://www.cse.iitm.ac.in/~miteshk/"> Prof. Mitesh Khapra</a>. For what feels like eons
-        ago now, I did my undergraduate studies at <a href="https://www.bits-pilani.ac.in/hyderabad/">BITS
-          Hyderabad</a>, where I graduated with a B.E in Computer
-        Science and a Minor in Physics.</p>
+      <p>Hey👋! I am Varun, a first-year PhD student in the School of Electrical and Electronic Engineering at <a
+          href="https://www.ntu.edu.sg/" target="_blank">Nanyang
+          Technological
+          University</a>, advised by <a href="https://soujanyaporia.github.io" target="_blank">Prof. Soujanya
+          Poria</a>.
+        Previously, I was a Pre-Doctoral SCAI-Center Fellow at Microsoft Research India, where I was mentored by <a
+          href="https://www.microsoft.com/en-us/research/people/kalikab/" target="_blank">Dr. Kalika Bali</a> and <a
+          href="https://www.microsoft.com/en-us/research/people/susitara/" target="_blank">Dr. Sunayana Sitaram</a>.
+        Prior to that, I completed my M.Tech at <a href="https://www.iitm.ac.in/" target="_blank">IIT Madras</a>,
+        co-advised by <a href="https://prajdabre.github.io/" target="_blank">Dr. Raj Dabre</a> and <a
+          href="https://www.cse.iitm.ac.in/~miteshk/" target="_blank">Prof. Mitesh Khapra</a>, and earlier earned my
+        B.E. in Computer Science (with a Minor in Physics) from <a href="https://www.bits-pilani.ac.in/hyderabad/"
+          target="_blank">BITS Hyderabad</a>.</p>
 
       <h2 id="research-interests">Research Interests</h2>
 
@@ -196,9 +196,7 @@
       <ul>
         <li>
           <p><strong>2024-11-10</strong>: ✈️ Attending EMNLP 2024 at Miami, Florida to present our work, <a
-              href="https://arxiv.org/abs/2406.15053">Pariksha</a>. I am also applying for a PhD this cycle (for Fall
-            2025), so looking
-            forward to connect with prospective mentors.</p>
+              href="https://arxiv.org/abs/2406.15053">Pariksha</a>.</p>
         </li>
         <li>
           <p><strong>2024-10-21</strong>: 📜The Report on Contamination of Multilingual Benchmarks has been accepted at
@@ -226,16 +224,7 @@
         </li>
       </ul>
 
-      <h2 id="teaching">Teaching</h2>
-      <p><strong>Courses</strong></p>
-      <ul>
-        <li>TA’d for "Machine Learning", "Linear Algebra and Random Processes", and "Fundamentals of Deep Learning" at
-          IIT Madras. Won the ⭐ TA Award for both first and second year of M.Tech.
-        </li>
-        <li>TA’d for "Introductary Physics", "Computer Programming", "Discerete Mathematics", "Data Structures and
-          Algorithms", "Foundatios of Data Science" and "Machine Learning" at BITS Hyderabad.
-        </li>
-      </ul>
+
 
       <!-- <p><strong>Talks and Tutorials</strong></p>
       <ul>
@@ -256,7 +245,7 @@
       </ul> -->
 
       <hr />
-      <div class="social-icons">
+      <div class="social-icons" aria-label="Social links">
         <a href="mailto:varun230999@gmail.com" target="_blank"><i class="fas fa-envelope ai-lg"></i></a>
         <a href="https://scholar.google.com/citations?user=tqDhGbwAAAAJ&hl=en" target="_blank"><i
             class="ai ai-google-scholar ai-lg"></i></a>
@@ -265,10 +254,10 @@
         <a href="https://github.com/VarunGumma" target="_blank"><i class="fab fa-github ai-lg"></i></a>
         <a href="https://x.com/VarunGumma23" target="_blank"><i class="fab fa-twitter ai-lg"></i></a>
       </div>
-      <p style="text-align: center; margin-bottom: 10px">
-        <a href="https://github.com/ankitsultana" style="color: black"><small>Theme by Ankit Sultana.</small></a> <a
-          href="https://kabirahuja2431.github.io/" style="color: black"><small>Website verbatim shamelessly copied from
-            Kabir Ahuja</small></a>
+      <p class="credits" style="text-align: center; margin-bottom: 10px">
+        <a href="https://github.com/ankitsultana"><small>Theme by Ankit Sultana.</small></a>
+        <a href="https://kabirahuja2431.github.io/"><small>Website verbatim shamelessly copied from Kabir
+            Ahuja</small></a>
       </p>
 
     </div>
@@ -279,10 +268,71 @@
 
 
 <!-- <a href="https://www.annavignet.com/" target="_blank"> -->
-<img src="images/yiyi.png" alt="Description of the image"
-  style="position: fixed; bottom: 0; right: 0; width: 80px; height: auto;">
+<img src="images/yiyi.png" alt="Decorative illustration"
+  style="position: fixed; bottom: 12px; right: 12px; width: 80px; height: auto; opacity: 0.85;">
 <!-- </a> -->
 
 <footer>
-
+  <div class="container" style="text-align:center; padding: 12px 0 20px; color: inherit;">
+    <small class="visitor">Visitors: <span id="visitor-count">—</span></small>
+  </div>
 </footer>
+
+<script>
+  (function () {
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReduced) return;
+    const content = document.querySelector('.container.content');
+    if (!content) return;
+    const items = Array.from(content.children);
+    items.forEach((el, i) => {
+      el.classList.add('reveal');
+      el.style.transitionDelay = (Math.min(i, 6) * 60) + 'ms';
+    });
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    items.forEach(el => io.observe(el));
+  })();
+</script>
+<script>
+  (function () {
+    var btn = document.getElementById('theme-toggle');
+    if (!btn) return;
+    function setTheme(t) {
+      document.documentElement.setAttribute('data-theme', t);
+      try { localStorage.setItem('theme', t); } catch (e) { }
+      var icon = btn.querySelector('i');
+      if (icon) {
+        icon.classList.remove('fa-sun', 'fa-moon');
+        icon.classList.add(t === 'dark' ? 'fa-sun' : 'fa-moon');
+      }
+    }
+    var current = document.documentElement.getAttribute('data-theme') || 'light';
+    setTheme(current);
+    btn.addEventListener('click', function () { setTheme((document.documentElement.getAttribute('data-theme') === 'dark') ? 'light' : 'dark'); });
+  })();
+  (function () {
+    var el = document.getElementById('visitor-count');
+    if (!el) return;
+    var NAMESPACE = 'varun-gumma-github-io';
+    var KEY = 'site-visitors';
+    var API = 'https://api.countapi.xyz';
+    function render(value) { el.textContent = (value == null ? '—' : Number(value).toLocaleString()); }
+    function get() { return fetch(API + '/get/' + NAMESPACE + '/' + KEY).then(function (r) { return r.json(); }); }
+    function hit() { return fetch(API + '/hit/' + NAMESPACE + '/' + KEY).then(function (r) { return r.json(); }); }
+    var visited = null;
+    try { visited = localStorage.getItem('vg_unique_visitor'); } catch (e) { }
+    if (visited) {
+      get().then(function (d) { render(d && d.value); }).catch(function () { render(); });
+    } else {
+      hit().then(function (d) { try { localStorage.setItem('vg_unique_visitor', '1'); } catch (e) { } render(d && d.value); })
+        .catch(function () { get().then(function (d) { render(d && d.value); }).catch(function () { render(); }); });
+    }
+  })();
+</script>
