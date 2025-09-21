@@ -195,7 +195,7 @@
                     <u>Varun Gumma*</u>,
                     Sunyana Sitaram
                 </p>
-                <p class="pub-meta"><i class="fas fa-glasses" aria-hidden="true"></i> EvalEval @ NEURIPS (2024)</p>
+                <p class="pub-meta"><i class="fas fa-glasses" aria-hidden="true"></i> EvalEval (2024)</p>
                 <p>
                     <a class="btn btn-outline-primary" href="https://arxiv.org/abs/2410.16186" target="_blank">ABS</a>
                     <a class="btn btn-outline-primary" href="https://arxiv.org/abs/2410.16186/pdf"
@@ -356,7 +356,7 @@
                     Vivek Seshadri,
                     Kalika Bali
                 </p>
-                <p class="pub-meta"><i class="fas fa-glasses" aria-hidden="true"></i> ComputEL @ EACL (2024)</p>
+                <p class="pub-meta"><i class="fas fa-glasses" aria-hidden="true"></i> ComputEL (2024)</p>
                 <p>
                     <a class="btn btn-outline-primary" href="https://aclanthology.org/2024.computel-1.11/"
                         target="_blank">ABS</a>
@@ -563,9 +563,10 @@
             const titleEl = pub.querySelector('h4');
             const titleText = titleEl ? titleEl.textContent : '';
             // Type tags
-            if (/\b(TMLR|Journal|Trans\.|Transactions)\b/i.test(meta)) pub.classList.add('journal');
+            if (/\b(TACL|TMLR|Journal|Trans\.|Transactions)\b/i.test(meta)) pub.classList.add('journal');
             if (/\b(NAACL|ACL|EMNLP|FAccT|EACL|EAMT|SECRYPT|NeurIPS|COLING|AAAI|ICLR|ICML|KDD|WWW)\b/i.test(meta)) pub.classList.add('conference');
-            if (/(Workshop|ComputEL|AfricaNLP|@\s*(EACL|ACL|EMNLP|NeurIPS))/i.test(meta) || pub.querySelector('.pub-meta i.fa-glasses')) pub.classList.add('workshop');
+            // Fix: removed empty alternation that caused all items to match as 'workshop'
+            if (/\b(Workshop|ComputEL|AfricaNLP|EvalEval)\b/i.test(meta) || pub.querySelector('.pub-meta i.fa-glasses')) pub.classList.add('workshop');
             if (/\bPreprint\b/i.test(textBlocks)) pub.classList.add('preprint');
             // Best paper
             if (/\uD83E\uDD47|🥇|Best Paper/i.test(titleText)) pub.classList.add('best');
