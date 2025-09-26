@@ -10,8 +10,9 @@
     --brand-700: #4338ca;
     --border: rgba(0, 0, 0, 0.08);
     --radius: 10px;
-    --font-serif: "Source Sans 3", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    --font-sans: "Source Sans 3", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    --font-serif: "Libre Baskerville", Georgia, "Times New Roman", Times, serif;
+    --font-sans: "Libre Franklin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-heading: "Libre Franklin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     --font-mono: "CMU Typewriter Text", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
     --space-1: 4px;
     --space-2: 8px;
@@ -23,16 +24,13 @@
 }
 
 [data-theme="dark"] {
-    --bg: #0b1220;
-    --fg: #e5e7eb;
-    /* gray-200 */
-    --heading: #f9fafb;
-    /* near-white for headings */
-    --muted: #9ca3af;
-    /* gray-400 */
-    --brand: #8b93ff;
-    --brand-700: #727aff;
-    --border: rgba(255, 255, 255, 0.12);
+    --bg: #000000;
+    --fg: #ffffff;
+    --heading: #ffffff;
+    --muted: #cccccc;
+    --brand: #60a5fa;
+    --brand-700: #3b82f6;
+    --border: rgba(255, 255, 255, 0.15);
 }
 
 html {
@@ -45,7 +43,7 @@ html {
 
 body {
     margin: 0;
-    font-family: var(--font-sans);
+    font-family: var(--font-serif);
     color: var(--fg);
     background: var(--bg);
     line-height: 1.7;
@@ -76,27 +74,31 @@ h2,
 h3,
 h4 {
     color: var(--heading);
-    line-height: 1.25;
-    font-family: var(--font-sans);
+    line-height: 1.3;
+    font-family: var(--font-heading);
+    letter-spacing: -0.015em;
+    font-weight: 600;
 }
 
 h1 {
     font-size: 2rem;
-    font-weight: 600;
-    letter-spacing: -0.01em;
+    font-weight: 700;
+    letter-spacing: -0.02em;
 }
 
 h2 {
-    font-size: 1.35rem;
+    font-size: 1.4rem;
     font-weight: 600;
+    letter-spacing: -0.01em;
     margin-top: var(--space-6);
     border-left: 3px solid var(--brand);
     padding-left: var(--space-3);
 }
 
 h3 {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     font-weight: 600;
+    letter-spacing: -0.005em;
     margin-top: var(--space-5);
 }
 
@@ -107,6 +109,16 @@ p {
     hyphens: auto;
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
+}
+
+.content,
+.content p,
+.content ul,
+.content ol,
+.content li,
+.publication p,
+.publication li {
+    font-family: var(--font-serif);
 }
 
 code,
@@ -130,8 +142,16 @@ html.beamer h4 {
     font-size: 26px;
     color: var(--heading);
     display: inline-block;
-    font-weight: 600;
-    letter-spacing: -0.01em;
+    font-weight: 700;
+    letter-spacing: 0;
+    font-family: var(--font-heading);
+}
+
+#navlist a {
+    font-family: var(--font-sans);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-transform: none;
 }
 
 .navbar {
@@ -287,6 +307,41 @@ html.beamer h4 {
     padding: 0 20px 0 20px
 }
 
+.news-list {
+    max-height: 280px;
+    overflow-y: auto;
+    margin: var(--space-3) 0 var(--space-4);
+    padding-right: var(--space-2);
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable both-edges;
+}
+
+.news-list li {
+    margin-bottom: var(--space-2);
+}
+
+.news-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.news-list::-webkit-scrollbar-track {
+    background: color-mix(in srgb, var(--border) 50%, transparent);
+    border-radius: 999px;
+}
+
+.news-list::-webkit-scrollbar-thumb {
+    background: color-mix(in srgb, var(--brand) 50%, transparent);
+    border-radius: 999px;
+}
+
+[data-theme="dark"] .news-list::-webkit-scrollbar-track {
+    background: color-mix(in srgb, var(--border) 65%, transparent);
+}
+
+[data-theme="dark"] .news-list::-webkit-scrollbar-thumb {
+    background: color-mix(in srgb, var(--brand) 70%, transparent);
+}
+
 .content ol {
     padding: 0 30px 0 30px
 }
@@ -299,10 +354,11 @@ html.beamer h4 {
 }
 
 .content blockquote {
-    border-left: 5px solid #333333;
+    border-left: 5px solid var(--muted);
     margin: 20px 0 20px 0;
     padding: 2px 8px 2px 8px;
-    font-style: italic
+    font-style: italic;
+    color: var(--fg);
 }
 
 .content .profile-picture {
@@ -331,6 +387,13 @@ p .content .profile-picture {
     }
 }
 
+@media (max-width: 600px) {
+    .news-list {
+        max-height: 220px;
+        padding-right: var(--space-1);
+    }
+}
+
 .content img {
     text-align: center;
     width: 100%
@@ -344,29 +407,31 @@ table {
 }
 
 table tr {
-    border-top: 1px solid #cccccc;
-    background-color: white;
+    border-top: 1px solid var(--border);
+    background-color: var(--bg);
     margin: 0;
     padding: 0
 }
 
 table tr:nth-child(2n) {
-    background-color: #f8f8f8
+    background-color: color-mix(in srgb, var(--border) 30%, transparent);
 }
 
 table tr th {
     font-weight: bold;
-    border: 1px solid #cccccc;
+    border: 1px solid var(--border);
     text-align: left;
     margin: 0;
-    padding: 6px 13px
+    padding: 6px 13px;
+    color: var(--heading);
 }
 
 table tr td {
-    border: 1px solid #cccccc;
+    border: 1px solid var(--border);
     text-align: left;
     margin: 0;
-    padding: 6px 13px
+    padding: 6px 13px;
+    color: var(--fg);
 }
 
 table tr th :first-child,
@@ -400,7 +465,11 @@ table tr td :last-child {
 .publication h4 {
     margin-top: 0;
     margin-bottom: 5px;
-    font-size: 1rem
+    font-size: 1.05rem;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1.4;
 }
 
 .publication p {
@@ -412,6 +481,12 @@ table tr td :last-child {
 .publication a {
     text-decoration: none;
     color: var(--brand)
+}
+
+.publication h4 a {
+    color: var(--heading);
+    font-family: var(--font-heading);
+    font-weight: 600;
 }
 
 .publication a:hover {
@@ -498,7 +573,7 @@ table tr td :last-child {
 /* Dark theme keeps strong contrast for active chips */
 [data-theme="dark"] .chip.active {
     background: var(--brand);
-    color: #fff;
+    color: #000000;
     border-color: var(--brand);
 }
 
@@ -517,7 +592,7 @@ table tr td :last-child {
 }
 
 [data-theme="dark"] .chip.active i {
-    color: #fff;
+    color: #000000;
 }
 
 /* Avoid flicker on mouse down */
@@ -551,7 +626,7 @@ table tr td :last-child {
 
 .btn:hover {
     background-color: var(--brand);
-    color: #fff;
+    color: var(--bg);
     transform: translateY(-1px);
 }
 
@@ -562,7 +637,7 @@ table tr td :last-child {
 
 .btn-outline-primary:hover {
     background-color: var(--brand);
-    color: #fff
+    color: var(--bg);
 }
 
 /* Theme toggle */
@@ -585,8 +660,10 @@ table tr td :last-child {
     font-size: 14px;
 }
 
-.visitor {
+.footer-note {
+    display: block;
     color: var(--muted);
+    margin-top: 4px;
 }
 
 .credits {
